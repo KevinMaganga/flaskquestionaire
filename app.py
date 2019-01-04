@@ -1,7 +1,7 @@
 from flask import Flask , render_template, session, redirect, url_for, flash
-from flask_wtf import Form
-from wtforms import StringField
-from wtforms.validators import DataRequired
+#from flask_wtf import Form
+#from wtforms import StringField
+#from wtforms.validators import DataRequired
 from flask import current_app
 from flask_sqlalchemy import SQLAlchemy
 import os
