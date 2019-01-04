@@ -17,8 +17,8 @@ db = SQLAlchemy(app)
 
 def index():
     string =os.path.dirname(os.path.abspath(__file__))
-    #return string
-    return render_template('pics2.html')
+    return string
+    #return render_template('pics2.html')
 
 	
 @app.route('/contacts')
