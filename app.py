@@ -6,7 +6,7 @@ from flask import current_app
 from flask_sqlalchemy import SQLAlchemy
 import os
 
-string =os.path.dirname(os.path.abspath(__file__))
+#string =os.path.dirname(os.path.abspath(__file__))
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 db = SQLAlchemy(app)
@@ -16,9 +16,10 @@ db = SQLAlchemy(app)
 @app.route('/')
 
 def index():
-    string =os.path.dirname(os.path.abspath(__file__))
-    return string
+    #string =os.path.dirname(os.path.abspath(__file__))
+    #return string
     #return render_template('pics2.html')
+    return "<h3> post your question </h3>"
 
 	
 @app.route('/contacts')
